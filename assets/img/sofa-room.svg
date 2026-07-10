@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Ambiente com sofá e piso laminado">
+  <defs>
+    <linearGradient id="wall2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef1f6"/>
+      <stop offset="1" stop-color="#e2e7f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" fill="url(#wall2)"/>
+  <rect x="0" y="160" width="240" height="80" fill="#c9976a"/>
+  <g stroke="#8f5f36" stroke-width="1.5" opacity="0.5">
+    <line x1="0" y1="185" x2="240" y2="185"/>
+    <line x1="0" y1="210" x2="240" y2="210"/>
+    <line x1="60" y1="160" x2="60" y2="185"/>
+    <line x1="150" y1="185" x2="150" y2="210"/>
+    <line x1="190" y1="210" x2="190" y2="240"/>
+  </g>
+  <rect x="40" y="120" width="150" height="55" rx="14" fill="#c7ccd6"/>
+  <rect x="34" y="105" width="162" height="34" rx="14" fill="#dde1e8"/>
+  <rect x="34" y="100" width="30" height="65" rx="12" fill="#c7ccd6"/>
+  <rect x="166" y="100" width="30" height="65" rx="12" fill="#c7ccd6"/>
+  <rect x="70" y="108" width="26" height="18" rx="4" fill="#1b3d6d"/>
+  <rect x="105" y="108" width="26" height="18" rx="4" fill="#2f5fa8"/>
+  <circle cx="205" cy="90" r="16" fill="#4a8f5a"/>
+  <rect x="197" y="106" width="16" height="16" fill="#2b2f36"/>
+</svg>

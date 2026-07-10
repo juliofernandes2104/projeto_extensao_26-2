@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrar ou Criar Conta — JI Pisos Laminados</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="JI Decorações">
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="home">Início</a></li>
+      <li><a href="servicos.html" data-page="servicos">Serviços</a></li>
+      <li><a href="orcamento.html" data-page="orcamento">Orçamentos</a></li>
+      <li><a href="index.html#contato" data-page="contato">Contato</a></li>
+      <li><a href="admin.html" data-page="admin">Painel Admin</a></li>
+    </ul>
+    <div class="nav-actions" data-nav-actions></div>
+  </nav>
+</header>
+
+<div class="auth-wrap">
+  <div class="auth-card">
+    <div class="auth-logo"><img src="assets/logo.png" alt="JI Decorações"></div>
+
+    <div class="auth-tabs">
+      <button id="tabLogin" class="active" type="button">Entrar</button>
+      <button id="tabCadastro" type="button">Criar Conta</button>
+    </div>
+
+    <form id="formLogin">
+      <div class="form-msg" id="loginMsg"></div>
+      <div class="field">
+        <label for="loginEmail">E-mail</label>
+        <input type="email" id="loginEmail" placeholder="Digite seu e-mail" required>
+      </div>
+      <div class="field">
+        <label for="loginSenha">Senha</label>
+        <div class="field-pass">
+          <input type="password" id="loginSenha" placeholder="Digite sua senha" required>
+          <button type="button" class="toggle-pass" data-target="loginSenha">👁</button>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+      <p class="form-foot">Não possui conta? <a href="#" class="toggle-to-cadastro">Criar Conta</a></p>
+    </form>
+
+    <form id="formCadastro" style="display:none;">
+      <div class="form-msg" id="cadMsg"></div>
+      <div class="field">
+        <label for="cadNome">Nome completo</label>
+        <input type="text" id="cadNome" placeholder="Digite seu nome" required>
+      </div>
+      <div class="field">
+        <label for="cadEmail">E-mail</label>
+        <input type="email" id="cadEmail" placeholder="Digite seu e-mail" required>
+      </div>
+      <div class="field">
+        <label for="cadTelefone">Telefone</label>
+        <input type="tel" id="cadTelefone" placeholder="(21) 00000-0000" required>
+      </div>
+      <div class="field">
+        <label for="cadSenha">Senha</label>
+        <div class="field-pass">
+          <input type="password" id="cadSenha" placeholder="Crie uma senha" required minlength="4">
+          <button type="button" class="toggle-pass" data-target="cadSenha">👁</button>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Criar Conta</button>
+      <p class="form-foot">Já possui conta? <a href="#" class="toggle-to-login">Entrar</a></p>
+    </form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

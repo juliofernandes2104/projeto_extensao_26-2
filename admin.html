@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel Administrativo — JI Pisos Laminados</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="admin">
+
+<div class="admin-shell">
+  <aside class="admin-sidebar">
+    <div class="admin-brand">
+      <img src="assets/logo.png" alt="JI Pisos Laminados">
+      <span>JI PISOS<br>LAMINADOS</span>
+    </div>
+    <nav class="admin-nav">
+      <a href="#" class="active">🏠 Dashboard</a>
+      <a href="#">🧾 Pedidos</a>
+      <a href="#">👥 Clientes</a>
+      <a href="#">🛠️ Serviços</a>
+      <a href="#">⚙️ Configurações</a>
+    </nav>
+    <button class="admin-logout" id="adminSair">⏻ Sair</button>
+  </aside>
+
+  <main class="admin-main">
+    <div class="admin-header">
+      <div>
+        <h1>Painel Administrativo</h1>
+        <p>Acompanhe e atualize os pedidos recebidos pelo site.</p>
+      </div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-card"><div class="num" id="statTotal">0</div><div class="label">Total de pedidos</div></div>
+      <div class="stat-card"><div class="num" id="statPendentes">0</div><div class="label">Pendentes</div></div>
+      <div class="stat-card"><div class="num" id="statAndamento">0</div><div class="label">Em andamento</div></div>
+      <div class="stat-card"><div class="num" id="statConcluidos">0</div><div class="label">Concluídos</div></div>
+    </div>
+
+    <div class="table-card">
+      <div class="table-card-head">
+        <h2>Lista de Pedidos</h2>
+        <div class="table-filter">
+          <select id="filtroStatus">
+            <option value="Todos">Todos os status</option>
+            <option value="Pendente">Pendente</option>
+            <option value="Em andamento">Em andamento</option>
+            <option value="Concluído">Concluído</option>
+          </select>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Cliente</th>
+            <th>Serviço</th>
+            <th>Status</th>
+            <th>Data</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="pedidosBody"></tbody>
+      </table>
+      <div class="empty-state" id="emptyState" style="display:none;">Nenhum pedido encontrado para este filtro.</div>
+    </div>
+  </main>
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <h3>Detalhes do Pedido</h3>
+    <div id="modalBody"></div>
+    <div class="modal-close-row">
+      <button class="btn btn-ghost" id="modalClose">Fechar</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solicitar Orçamento — JI Pisos Laminados</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="orcamento">
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="JI Decorações">
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="home">Início</a></li>
+      <li><a href="servicos.html" data-page="servicos">Serviços</a></li>
+      <li><a href="orcamento.html" data-page="orcamento">Orçamentos</a></li>
+      <li><a href="index.html#contato" data-page="contato">Contato</a></li>
+      <li><a href="admin.html" data-page="admin">Painel Admin</a></li>
+    </ul>
+    <div class="nav-actions" data-nav-actions></div>
+  </nav>
+</header>
+
+<div class="orc-wrap">
+  <div class="orc-card">
+    <div id="orcFormWrap">
+      <h1>Solicitar Orçamento</h1>
+      <p>Preencha os dados abaixo e nossa equipe entrará em contato.</p>
+      <form id="formOrcamento">
+        <div class="form-msg" id="orcMsg"></div>
+        <div class="field">
+          <label for="orcNome">Nome</label>
+          <input type="text" id="orcNome" placeholder="Digite seu nome" required>
+        </div>
+        <div class="field">
+          <label for="orcTelefone">Telefone</label>
+          <input type="tel" id="orcTelefone" placeholder="(21) 00000-0000" required>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="orcAmbiente">Tipo de ambiente</label>
+            <select id="orcAmbiente" required>
+              <option value="" disabled selected>Selecione</option>
+              <option>Sala</option>
+              <option>Quarto</option>
+              <option>Cozinha</option>
+              <option>Escritório</option>
+              <option>Loja / Comércio</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="orcMetragem">Metragem (m²)</label>
+            <input type="number" id="orcMetragem" placeholder="Ex.: 50" min="1" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="orcPiso">Tipo de piso</label>
+          <select id="orcPiso" required>
+            <option value="" disabled selected>Selecione</option>
+            <option>Laminado</option>
+            <option>Vinílico</option>
+            <option>Ainda não sei / preciso de orientação</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="orcDescricao">Descrição</label>
+          <textarea id="orcDescricao" placeholder="Descreva sua necessidade..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Enviar Solicitação</button>
+      </form>
+    </div>
+
+    <div id="orcSucesso" class="success-box" style="display:none;">
+      <div class="icon">✓</div>
+      <h2>Solicitação enviada!</h2>
+      <p>Recebemos seu pedido de orçamento. Nossa equipe entrará em contato em breve pelo telefone informado.</p>
+      <a href="index.html" class="btn btn-primary">Voltar ao Início</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">© 2026 JI Pisos Laminados. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 340" role="img" aria-label="Instalador posicionando régua de piso laminado">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef1f6"/>
+      <stop offset="1" stop-color="#e2e7f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="340" fill="url(#bg1)"/>
+
+  <!-- installed floor (left) -->
+  <rect x="0" y="230" width="230" height="110" fill="#b9865a"/>
+  <g stroke="#8f5f36" stroke-width="2" opacity="0.5">
+    <line x1="0" y1="260" x2="230" y2="260"/>
+    <line x1="0" y1="290" x2="230" y2="290"/>
+    <line x1="0" y1="320" x2="230" y2="320"/>
+    <line x1="70" y1="230" x2="70" y2="260"/>
+    <line x1="160" y1="260" x2="160" y2="290"/>
+    <line x1="40" y1="290" x2="40" y2="320"/>
+  </g>
+
+  <!-- subfloor (right, not yet installed) -->
+  <rect x="230" y="230" width="270" height="110" fill="#d8cdb8"/>
+  <g stroke="#bdb093" stroke-width="1.5">
+    <line x1="260" y1="230" x2="260" y2="340"/>
+    <line x1="320" y1="230" x2="320" y2="340"/>
+    <line x1="380" y1="230" x2="380" y2="340"/>
+    <line x1="440" y1="230" x2="440" y2="340"/>
+  </g>
+
+  <!-- new plank being placed -->
+  <rect x="235" y="235" width="150" height="34" rx="3" fill="#c9976a" stroke="#8f5f36" stroke-width="2"/>
+
+  <!-- person crouching, installing -->
+  <g>
+    <!-- leg -->
+    <path d="M300 150 q10 40 -10 75 l35 5 q25 -45 10 -80 z" fill="#2b2f36"/>
+    <path d="M330 150 q25 35 10 70 l32 8 q20 -50 -5 -85 z" fill="#1e222a"/>
+    <!-- torso -->
+    <path d="M290 90 q40 -25 85 5 l-10 65 q-45 20 -80 -5 z" fill="#1b3d6d"/>
+    <!-- arm reaching to plank -->
+    <path d="M300 120 q-20 40 -45 65 l20 18 q35 -25 50 -65 z" fill="#274c85"/>
+    <!-- head -->
+    <circle cx="330" cy="72" r="22" fill="#e3ad84"/>
+    <path d="M308 65 q22 -22 46 -2 q2 -20 -22 -24 q-24 -2 -24 26 z" fill="#3a2a1e"/>
+  </g>
+
+  <!-- hand + rubber mallet near plank -->
+  <circle cx="252" cy="205" r="9" fill="#e3ad84"/>
+  <rect x="235" y="185" width="14" height="34" rx="4" fill="#555b66" transform="rotate(-20 242 202)"/>
+  <rect x="228" y="178" width="26" height="16" rx="4" fill="#333941" transform="rotate(-20 241 186)"/>
+</svg>

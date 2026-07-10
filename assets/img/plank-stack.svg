@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Pilha de réguas de piso laminado">
+  <rect width="240" height="240" fill="#f2eee6"/>
+  <g>
+    <rect x="30" y="150" width="180" height="26" rx="4" fill="#c9976a" stroke="#8f5f36" stroke-width="2"/>
+    <rect x="20" y="120" width="200" height="26" rx="4" fill="#b9865a" stroke="#8f5f36" stroke-width="2"/>
+    <rect x="30" y="90" width="180" height="26" rx="4" fill="#c9976a" stroke="#8f5f36" stroke-width="2"/>
+    <rect x="20" y="60" width="200" height="26" rx="4" fill="#a9743f" stroke="#8f5f36" stroke-width="2"/>
+    <line x1="80" y1="60" x2="80" y2="86" stroke="#8f5f36" stroke-width="1.5" opacity="0.6"/>
+    <line x1="150" y1="90" x2="150" y2="116" stroke="#8f5f36" stroke-width="1.5" opacity="0.6"/>
+    <line x1="100" y1="120" x2="100" y2="146" stroke="#8f5f36" stroke-width="1.5" opacity="0.6"/>
+    <line x1="170" y1="150" x2="170" y2="176" stroke="#8f5f36" stroke-width="1.5" opacity="0.6"/>
+  </g>
+</svg>
